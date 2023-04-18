@@ -11,11 +11,16 @@
   <header>
     <nav>
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Parody News</a>
+        <a href="index.html" class="brand-logo">Parody News</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="index.html">Home</a></li>
-          <li><a href="article.html">Featured Article</a></li>
+          <li><a href="article.html?title=Time%20Traveler%27s%20Guide%20to%20the%20Best%20Coffee%20Shops">Featured Article</a></li>
+          <li>
+            <a class="dropdown-trigger" href="#!" data-target="article-dropdown">Articles<i class="material-icons right">arrow_drop_down</i></a>
+          </li>
         </ul>
+        <!-- Move the "article-dropdown" element here -->
+        <ul id="article-dropdown" class="dropdown-content"></ul>
       </div>
     </nav>
   </header>
@@ -23,7 +28,13 @@
   <main>
     <div class="container">
       <h1>Welcome to Parody News!</h1>
-      <p>Check out our <a href="article.html">featured article</a>!</p>
+      <div class="row">
+          <div class="input-field col s12">
+            <input id="search" type="text" class="validate">
+            <label for="search">Search for articles</label>
+          </div>
+      </div>
+      <p>Check out our <a href="article.html?title=Time%20Traveler%27s%20Guide%20to%20the%20Best%20Coffee%20Shops">featured article</a>!</p>
     </div>
   </main>
 
@@ -39,5 +50,6 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
