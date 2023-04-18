@@ -6,5 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('article-author').innerText = data.author;
       document.getElementById('article-date').innerText = data.date;
       document.getElementById('article-content').innerText = data.content;
+      document.getElementById('article-cover-picture').src = data.cover_picture;
     });
 });
